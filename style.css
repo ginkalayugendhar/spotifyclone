@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    font-family: 'Kanit', sans-serif;
+}
+
+.body-container {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    height: 98.5%;
+    width: 99%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 91.9% 7.3%;
+    row-gap: 0.7%;
+}
+
+.contentbar {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25.2% 74.3%;
+    column-gap: 0.5%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 18.5% 80.5%;
+    row-gap: 1%;
+    border-radius: 10px;
+}
+
+.homebar {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.spotify {
+    height: 15.5%;
+    width: 88.8%;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.b1 {
+    letter-spacing: -0.5px;
+    font-size: 15.75px;
+    font-weight: bold;
+}
+
+.home {
+    height: 15.5%;
+    width: 88.8%;
+    color: rgb(175, 175, 175);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 22.5px;
+    font-weight: 100;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.home:hover {
+    color: whitesmoke;
+}
+
+.b2 {
+    letter-spacing: -0.5px;
+    font-size: 16.28px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.b2:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.search {
+    height: 15.5%;
+    width: 88.8%;
+    color: rgb(175, 175, 175);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 22.5px;
+    font-weight: 100;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.search:hover {
+    color: whitesmoke;
+}
+
+.b3 {
+    letter-spacing: -0.5px;
+    font-size: 16.28px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.b3:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.librarybar {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.library {
+    height: 8.5%;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapse {
+    height: 100%;
+    width: 40%;
+    font-size: 22px;
+    color: rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+    gap: 17px;
+}
+
+.collapse:hover {
+    color: rgb(240, 240, 240);
+}
+
+.ylib {
+    font-size: 17px;
+}
+
+.addplaylist {
+    height: 45%;
+    width: 7%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.3s;
+    font-size: 20px;
+    align-items: center;
+    color: rgb(170, 170, 170);
+}
+
+.addplaylist:hover {
+    background-color: rgb(40, 40, 40);
+    color: rgb(240, 240, 240);
+}
+
+.playlistsections {
+    height: 78%;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.playlistsection1 {
+    height: 29%;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 11px;
+    color: white;
+    background-color: rgb(38, 38, 38);
+    position: relative;
+    top: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.playbut1 {
+    height: 25%;
+    width: 30%;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.playbut1:hover{
+    transform: scale(1.05);
+}
+
+.playlistsection2 {
+    height: 29%;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 11px;
+    color: white;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.playbut2 {
+    height: 25%;
+    width: 35%;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.playbut2:hover{
+    transform: scale(1.05);
+}
+
+.libraryads {
+    height: 8%;
+    width: 88%;
+    font-size: 11.5px;
+    word-spacing: 10px;
+    line-height: 28px;
+}
+
+.libraryads1 {
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+}
+
+.librarycookies {
+    height: 7%;
+    width: 88%;
+    font-size: 11.5px;
+    display: flex;
+    align-items: center;
+}
+
+.libraryads2 {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+.libraryads2:hover {
+    text-decoration: underline;
+}
+
+.langbut {
+    height: 15%;
+    width: 88%;
+    display: flex;
+    align-items: center;
+}
+
+.langbut1 {
+    height: 33%;
+    width: 25%;
+    border-radius: 20px;
+    border: 0.5px solid gray;
+    outline: none;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.langbut1:hover {
+    border: 1px solid whitesmoke;
+    transform: scale(1.05);
+}
+
+.mainbar {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 7.4% 92.3%;
+    row-gap: 0.3%;
+}
+
+.topbar {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.lefttop {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.less {
+    height: 100%;
+    width: 18.5%;
+    font-size: 110%;
+    color: rgb(101, 101, 101);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.great {
+    height: 100%;
+    width: 28%;
+    font-size: 110%;
+    color: rgb(101, 101, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.righttop {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.signupbut {
+    height: 100%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    height: 77%;
+    width: 83%;
+    border-radius: 25px;
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.signup:hover {
+    color: whitesmoke;
+    transform: scale(1.05);
+}
+
+.loginbut {
+    height: 100%;
+    width: 13.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login {
+    height: 77%;
+    width: 83%;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: whitesmoke;
+    outline: none;
+    border: none;
+}
+
+.login:hover {
+    transform: scale(1.05);
+}
+
+.playbar {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: auto;
+}
+
+.spotifyplayall {
+    height: 6%;
+    width: 96.2%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spotifyplaylist {
+    height: 100%;
+    width: 50%;
+    color: white;
+    font-size: 22.5px;
+    letter-spacing: -0.15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.showall {
+    height: 70%;
+    width: 50%;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    font-size: 14.5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.showall:hover {
+    text-decoration: underline;
+}
+
+.playlist {
+    height: 75%;
+    width: 96.2%;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 44% 44%;
+    row-gap: 4%;
+    column-gap: 2%;
+}
+
+article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
+    transition-duration: 0.5s;
+}
+
+.playbutton {
+    display: none;
+    transition-duration: 0.5s;
+}
+
+article:hover {
+    background-color: rgb(36, 36, 36);
+
+    .playbutton {
+        height: 49px;
+        width: 49px;
+        border-radius: 50%;
+        font-size: 20px;
+        position: absolute;
+        z-index: 3;
+        border: none;
+        outline: none;
+        top: 105px;
+        right: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(79, 210, 79);
+        transition-duration: 0.3s;
+        color: black;
+    }
+
+    .playbutton:hover {
+        background-color: rgb(77, 234, 77);
+        transform: scale(1.06);
+    }
+}
+
+img {
+    height: 57.5%;
+    width: 83%;
+    border-radius: 6px;
+}
+
+h1 {
+    height: 15%;
+    width: 83%;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    display: flex;
+    color: whitesmoke;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+h6 {
+    height: 18%;
+    width: 83%;
+    letter-spacing: 0.5px;
+    color: rgb(150, 150, 150);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.advertise {
+    height: 34%;
+    width: 94.7%;
+    color: white;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ads {
+    height: 81.5%;
+    width: 53.5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.ads1 {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ads2 {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ads3 {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.adstags {
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+.adstags:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.otherlogin {
+    height: 81.5%;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.otherlogin1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.otherlogin1:hover {
+    background-color: gray;
+}
+
+.copyright {
+    height: 17%;
+    width: 94.5%;
+    background-color: transparent;
+    font-size: 14px;
+    color: rgb(170, 170, 170);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.copyright1 {
+    height: 40%;
+    width: 50%;
+}
+
+#copyright2 {
+    font-size: 10px;
+}
+
+.previewbar {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(176, 7, 185), rgb(0, 191, 255));
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.previewleft {
+    height: 100%;
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: -1px;
+    color: white;
+}
+
+.p1 {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.p2 {
+    font-size: 15px;
+    letter-spacing: 0.55px;
+    font-weight: lighter;
+}
+
+.previewright {
+    height: 100%;
+    width: 29%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.signupfree {
+    height: 71%;
+    width: 32%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.signupfree:hover {
+    transform: scale(1.05);
+}
